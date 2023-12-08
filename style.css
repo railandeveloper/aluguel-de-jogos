@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: rgb(0, 0, 0);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(1, 8, 14, 1) 25%, rgba(80, 94, 255, 0.85) 50%, rgba(1, 8, 14, 1) 75%, rgba(0, 0, 0, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.page-title {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.painel__items, img{
+    width: 200px;
+}
+
+.painel{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 45px;
+}
+
+.painel__items{
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.borda{
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 150px;
+    gap: 100px;
+}
+
+.bottao{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: #1875E8;
+    color: white;
+    padding: 15px 50px;
+}
+
+/* Define a imagem do GTA como opaca quando estiver alugada */
+.painel__item__img--alugado img {
+    opacity: 0.5; /* Ajuste o valor conforme necessário (0 totalmente transparente, 1 totalmente opaco) */
+    transition: opacity 0.3s ease; /* Adiciona uma transição suave para a mudança de opacidade */
+}
+
+.bottao--devolver{
+    background-color:#01080E ;
+}
+
+@media(max-width: 768px) {
+    
+  .page-title{
+    margin-left: 20px;
+  }
+
+    .painel__items{
+    height: 100vh;
+    margin-top: 400px;
+  }
+
+     .borda{
+        display: flex;
+        flex-direction: column;
+     }
+  
+}
+
+

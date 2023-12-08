@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aluguel dejogos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1 class="page-title">Aluguel de <span class="page-title__emphasis">games</span></h1>
+
+    <section class="painel">
+        <ul class="painel__items">
+            <div class="borda">
+            <li class="painel__items__item" id="game-1">
+                <div class="painel__item__img">
+                    <img src="/img/god.png" alt="Capa jogo God of War 2">
+                </div>
+                <p class="painel__item__nome">God of War 2</p>
+                <a onclick="alterarStatus(1)" href="#" class="bottao">Alugar</a>
+            </li>
+            <li class="painel__items__item" id="game-2">
+                <div class="painel__item__img">
+                    <img src="/img/dz.png" alt="Capa jogo DBZ Budokai Tenkaichi 3">
+                </div>
+                <p class="painel__item__nome">DBZ Budokai Tenkaichi 3</p>
+                <a onclick="alterarStatus(2)" href="#" class="bottao">Alugar</a>
+            </li>
+            <li class="painel__items__item" id="game-3">
+                <div class="painel__item__img painel__item__img--alugado" >
+                    <img src="/img/gtasa.png" alt="Capa jogo GTA">
+                </div>
+                <p class="painel__item__nome">GTA</p>
+                <a onclick="alterarStatus(3)" href="#" class="bottao bottao--devolver">Devolver</a>
+            </li>
+           </div> 
+        </ul>
+    </section>
+    
+
+    <script src="/index.js"></script>
+</body>
+</html>
